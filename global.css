@@ -90,7 +90,10 @@ p {
 }
 
 .nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -104,7 +107,11 @@ p {
 .content {
     margin: 20px 0;
     overflow: auto;
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .panel {
@@ -144,11 +151,15 @@ p {
 /* Screen sizes of 768px and smaller */
 @media only screen and (max-width: 768px) {
     .nav_item {
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
         max-width: 50%;
     }
     .panel {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
         max-width: 100%;
     }
     .panel:first-child {
